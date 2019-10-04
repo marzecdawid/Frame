@@ -19,7 +19,7 @@ class Frame
     public:
     int fillTable()
     {
-        if (table != NULL || characters != NULL)
+        if (table != NULL && characters != NULL)
             for (int iy = 0; iy < tableSize.y; ++iy)
                 for (int ix = 0; ix < tableSize.x; ++ix)
                     table[iy][ix] = characters[rand()%(numberOfChar)];
